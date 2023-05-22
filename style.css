@@ -1,5 +1,93 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+:root {
+    --neon: #C3732A;
+    --background: #130c06;
+}
+
+* {
     margin: 0;
     padding: 0;
 }
 
+.neonText {
+    color: #fff;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px var(--neon),
+        0 0 82px var(--neon),
+        0 0 92px var(--neon),
+        0 0 102px var(--neon),
+        0 0 151px var(--neon);
+}
+
+
+/* Additional styling */
+
+body {
+    font-size: 18px;
+    font-family: "Lato", sans-serif;
+    background-color: var(--background);
+    color: white;
+}
+
+h1,
+h2 {
+    text-align: center;
+    font-weight: 400;
+}
+
+h1 {}
+
+
+h2 {
+    font-size: 1.8rem;
+}
+
+.head-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5rem;
+
+}
+
+.content-container {
+    margin-top: 80vh;
+    margin-left: auto;
+    margin-right: auto;
+    border: 10px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0);
+
+
+    backdrop-filter: blur(5px);
+    height: 800px;
+    width: 70vw;
+    border-radius: 10px;
+
+}
+
+.flex-grid {
+    display: flex;
+    background: rgba(29, 29, 29, 0.5);
+    backdrop-filter: blur(5px);
+    height: 800px;
+    border-radius: 10px;
+}
+
+.col {
+    flex: 1;
+    text-align: center;
+}
+
+img {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    color: #fff;
+    filter: drop-shadow(0 0 9px #fff) 
+    drop-shadow(0 0 42px var(--neon))  drop-shadow(0 0 47px var(--neon)) 
+}
