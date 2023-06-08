@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ivekovi klobasi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="feedback.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <section>
+        <nav>
+            <div class="logo">
+                <img src="slike/logo.png" alt="logo">
+            </div>
+            <ul>
+                <li><a href="index.html">Početna</a></li>
+                <li><a href="oNama.html">O nama</a></li>
+                <li><a href="proizvodi.html">Proizvodi</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+            <div class="icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        </nav>
+        <div class="main" id="Početna">
+            <div class="men_text">
+                <h1>O NAMA</h1>
+            </div>
+        </div>
+
+        <div class="comment-section">
+            <h1 class="comment-reply-title">Napiši svoj komentar!</h1>
+            <form id="commentform" class="comment-form">
+                <div class="comment-form-name">
+                    <input id="name" placeholder="Ime *" name="name" type="text" value="" pattern="^[^0-9]+$" size="30" maxlength="245" required>
+                    <label for="name">Ime</label>
+                </div>
+                <div class="comment-form-surname">
+                    <input id="surname" placeholder="Prezime *" name="surname" type="text" value="" size="30" maxlength="245" required>
+                    <label for="surname" >Prezime</label>
+                </div>
+                <div class="comment-form-email">
+                    <input id="email" placeholder="Email *" name="email" type="email" value="" size="30" maxlength="100" aria-describedby="email-notes" required>
+                    <label for="email" data-help="Format email@email.com">Email</label>
+                </div>
+                <div class="comment-form-url">
+                    <input id="url" placeholder="Stranica" name="url" type="url" value="" size="30" maxlength="200">
+                    <label for="url" >Stranica</label>
+                </div>
+                <div class="comment-form-comment">
+                    <textarea textarea="" placeholder="Komentar *" id="comment" name="comment" cols="45" rows="8" maxlength="65525" required></textarea>
+                    <label for="comment" data-help="Komentar">Komentar</label>
+                </div>
+                <div class="form-submit">
+                    <input name="submit" type="submit" id="submit" class="submit" value="Pošalju komentar">
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>

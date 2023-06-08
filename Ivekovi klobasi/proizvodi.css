@@ -1,0 +1,187 @@
+section .main .men_text h1 {
+    font-size: 3.8rem;
+    position: relative;
+    left: 20px;
+    color: #5C6E68;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+section .main .men_text h1 span {
+    margin-left: 15px;
+    color: #FFA500;
+    font-family: mv boli;
+    line-height: 22px;
+    font-size: 70px;
+}
+
+section .main .main_image img {
+    width: 100%;
+    position: relative;
+    margin-top: 115px;
+    right: 0px;
+}
+
+section p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    color: #5C6E68;
+    text-align: justify;
+    position: relative;
+    line-height: 22px;
+}
+
+.menu {
+    width: 100%;
+    padding: 70px 0;
+    padding-top: 120px;
+}
+
+.menu h1 {
+    color: #5C6E68;
+    font-size: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+
+}
+
+.menu h1 span {
+    color: #FFA500;
+    margin-left: 15px;
+    font-family: mv boli;
+
+}
+
+.menu h1 span::after {
+    content: '';
+    width: 100%;
+    height: 3px;
+    background: #5C6E68;
+    display: block;
+    position: relative;
+    bottom: 10px;
+}
+
+.menu .menu_box {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 25px;
+}
+
+.menu .menu_box .menu_card {
+    width: 325px;
+    height: 550px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+}
+
+.menu .menu_box .menu_card .menu_image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 300px;
+}
+
+.menu .menu_box .menu_card .menu_image img {
+    width: 90%;
+    height: 100%;
+    max-width: 300px;
+    max-height: 300px;
+    transition: 0.3s;
+    align-items: center;
+}
+
+
+.menu .menu_box .menu_card .menu_image:hover img {
+    transform: scale(0.9);
+
+}
+
+
+section .menu_card .menu_btn {
+    color: black;
+    background: #FFA500;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+
+    bottom: 0;
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    padding: 12px 20px;
+}
+
+section .menu_card .menu_info {
+    position: relative;
+    width: 90%;
+    left: 8%;
+    height: 230px;
+}
+
+section .menu_btn a {
+    color: #fff;
+    margin-right: 0px;
+    text-decoration: none;
+}
+
+section .menu_btn i {
+    color: #fff;
+    transition: 0.3s;
+}
+
+section .menu_btn:hover i {
+    transform: translateX(7px);
+}
+
+.menu .menu_box .menu_card .menu_info h2 {
+    color: #FFA500;
+    text-align: center;
+    font-family: mv boli;
+}
+
+.menu .menu_box .menu_card .menu_info p {
+    color: #000;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+}
+
+.menu .menu_box .menu_card .menu_info h3 {
+    color: green;
+    text-align: center;
+}
+
+.menu .menu_box .menu_card .menu_info .menu_icon {
+    align-items: flex-start;
+
+}
+
+@media (max-width: 480px) {
+
+    .menu {
+        padding-top: 180px;
+    }
+    
+    .menu .menu_box {
+
+        grid-template-columns: 1fr;
+        grid-gap: 30px;
+    }
+
+    .menu h1 {
+        color: #5C6E68;
+        font-size: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+
+    }
+
+}

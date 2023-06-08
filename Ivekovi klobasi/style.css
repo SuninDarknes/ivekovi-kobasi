@@ -5,12 +5,17 @@
     font-family: sans-serif;
 }
 
+body {
+    overflow-x: hidden;
+    width: 100vw;
+}
+
 html {
     scroll-behavior: smooth;
 }
 
 section {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
 }
 
@@ -32,6 +37,10 @@ section nav .logo img {
     margin: 7px 0;
 }
 
+
+
+
+
 section nav ul {
     list-style: none;
 }
@@ -50,21 +59,25 @@ section nav ul li a {
 }
 
 section nav ul li a::after {
+    position: relative;
     content: '';
-    width: 100%;
+    width: 0%;
     height: 2px;
     background-color: #5C6E68;
     display: block;
+    left: 50%;
     transition: 0.2s linear;
 }
 
 section nav ul li a:hover::after {
     width: 100%;
+    left: 0;
 }
 
 section nav ul li a:hover {
-    
-    color: #FFA500;;
+
+    color: #FFA500;
+    ;
 }
 
 section nav .icon i {
@@ -79,208 +92,26 @@ section nav .icon i:hover {
     color: #FFA500;
 }
 
-section .main{
-    display:flex;
-    align-items: center;
-    justify-content: space-around;
-    position: relative;
-    top:140px;
 
-}
-section .main .men_text h1{
-font-size: 60px;
-position: relative;
-top:-90px;
-left:20px;
-color:#5C6E68;
-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
-}
-section .main .men_text h1 span{
-    margin-left: 15px;
-    color:#FFA500;
-    font-family: mv boli;
-    line-height: 22px;
-    font-size: 70px;
-}
-section .main .main_image img{
-    width: 1000px;
-    position: relative;
-    margin-top: 115px;
-    right: 0px;
-}
 section p {
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 700;
-    color:#5C6E68;
-    width: 650px;
+    color: #5C6E68;
     text-align: justify;
     position: relative;
-    left: 110px;
-    bottom: 400px;
     line-height: 22px;
 }
 
-section .main_btn{
-    background: #FFA500;
-    position: relative;
-    left:100px;
-    bottom: 200px;
-    width: 130px;
-    cursor: pointer;
-    padding: 12px 20px;
-}
 
- section .main_btn a{
-    color:#fff;
-    margin-right: 0px;
-    text-decoration: none;
- }
-section .main_btn i{
-    color:#fff;
-    transition: 0.3s;
-}
-section .main_btn:hover i{
-    transform: translateX(7px);
-}
-.about{
-    width: 100%;
-    height: 100vh;
-    padding: 70px 0;
+@media (max-width: 480px) {
+    section nav .logo img {
+        width: 100px;
+        cursor: pointer;
+        margin: 7px 0;
+    }
     
+section nav .icon i {
+            margin: 0 30px;
 }
-.about .about_main {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: column; /* Dodajte ovu liniju kako biste vertikalno poravnali elemente */
-    position: relative; /* Dodajte ovu liniju kako biste mogli pozicionirati tekst unutar kontejnera */
-}
-
-.about .about_main .image {
-    width: -100px;
-    position: relative;
-    margin-top: 0px;
-    margin-bottom: 100px;
-
-}
-
-.about .about_main .about_text {
-    color:#000;
-    position: absolute; /* Dodajte ovu liniju kako biste pozicionirali tekst unutar slike */
-    top: 90%; /* Pomaknite tekst prema sredini */
-    left: 45%; /* Pomaknite tekst prema sredini */
-    transform: translate(-50%, -50%); /* Centrirajte tekst na sredinu */
-    text-align: center; /* Centrirajte tekst unutar kontejnera */
-    z-index: 2; /* Postavite z-index na veću vrijednost kako bi se tekst prikazao iznad slike */
-  
-}
-
-.menu
-{
-    width: 100%;
-    padding: 70px 0;
-}
-.menu h1{
-    color:#5C6E68;
-    font-size: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 30px;
- 
-}
-.menu h1 span{
-    color: #FFA500;
-    margin-left: 15px;
-    font-size: 60px;
-    font-family: mv boli;
-   
-}
-.menu h1 span::after{
-    content: '';
-    width: 100%;
-    height: 3px;
-    background: #5C6E68;
-    display: block;
-    position: relative;
-    bottom:10px;
-}
-.menu .menu_box{
-width: 90%;
-margin: 0 auto;
-display: grid;
-grid-template-columns: 1fr 1fr 1fr 1fr;
-grid-gap: 5px;
-}
-.menu .menu_box .menu_card{
-    width: 325px;
-    height: 480px;
-    padding-top: 10px;
-    margin-bottom: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,2);
-}
-.menu .menu_box .menu_card .menu_image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.menu .menu_box .menu_card .menu_image img {
-    width: 90%;
-    height: 100%;
-    max-width: 300px;
-    max-height: 245px;
-    transition: 0.3s;
-   align-items: center;
-}
-
-
-.menu .menu_box .menu_card .menu_image:hover img {
-transform: scale(0.9);
-
-}
-section .menu_btn{
-    color: black;
-    background: #FFA500;
-    position: relative;
-    left:120px;
-    top: 10px;
-    bottom: 2px;
-    width: 100px;
-    height: 40px;
-    cursor: pointer;
-    padding: 12px 20px;
-}
-section .menu_btn a{
-    color:#fff;
-    margin-right: 0px;
-    text-decoration: none;
- }
- section .menu_btn i{
-    color:#fff;
-    transition: 0.3s;
-}
-section .menu_btn:hover i{
-    transform: translateX(7px);
-}
-
-.menu .menu_box .menu_card .menu_info h2{ 
-    color: #FFA500;
-    text-align: center;
-    font-family: mv boli;
-}
-.menu .menu_box .menu_card .menu_info p{ 
-    color: #000;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    text-align: center;
-}
-.menu .menu_box .menu_card .menu_info h3{ 
-    color: green;
-    text-align: center;
-}
-
-.menu .menu_box .menu_card .menu_info .menu_icon{
-    align-items: flex-start;
-    
 }
