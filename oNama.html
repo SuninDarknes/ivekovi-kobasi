@@ -499,6 +499,13 @@
             </defs>
         </svg>
     </footer>
+    <script>
+        let body = document.querySelector("body").offsetHeight;
+        let text = document.querySelector(".about_main").offsetHeight
+        if(text > body)document.querySelector("footer").style.top = text +400 + "px";
+        else document.querySelector("footer").style.top = body  + "px";
+
+    </script>
 </body>
 
 </html>

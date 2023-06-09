@@ -185,6 +185,7 @@ body .footer .bubbles .bubble {
 body .footer .content {
     padding: 6rem 1rem 2rem;
     background: var(--footer-background);
+    width: 100vw;
     z-index: 2;
 }
 
@@ -335,4 +336,11 @@ body .footer .content {
         grid-template-columns: repeat(1, 1fr);
         row-gap: 3.5rem;
     }
+}
+
+
+footer{
+    position: absolute;
+    top: 1000px;
+    width: 100%;
 }

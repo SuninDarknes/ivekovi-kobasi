@@ -190,8 +190,3 @@ section .menu_btn:hover i {
 }
 
 
-footer{
-    position: absolute;
-    top: 1000px;
-    width: 100%;
-}
