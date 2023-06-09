@@ -1,3 +1,4 @@
+
 section .main .men_text h1 {
     font-size: 3.8rem;
     position: relative;
@@ -35,6 +36,8 @@ section p {
     width: 100%;
     padding: 70px 0;
     padding-top: 120px;
+    padding-bottom: 300px;
+
 }
 
 .menu h1 {
@@ -184,4 +187,11 @@ section .menu_btn:hover i {
 
     }
 
+}
+
+
+footer{
+    position: absolute;
+    top: 1000px;
+    width: 100%;
 }
