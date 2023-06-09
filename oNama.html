@@ -500,10 +500,8 @@
         </svg>
     </footer>
     <script>
-        let body = document.querySelector("body").offsetHeight;
-        let text = document.querySelector(".about_main").offsetHeight
-        if(text > body)document.querySelector("footer").style.top = text +400 + "px";
-        else document.querySelector("footer").style.top = body  + "px";
+        if(document.querySelector("body").offsetWidth < 480)document.querySelector("footer").style.top = document.querySelector(".about_main").offsetHeight +400 + "px";
+
 
     </script>
 </body>
